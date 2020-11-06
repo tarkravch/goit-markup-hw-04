@@ -35,10 +35,9 @@ body a {
     text-decoration: none;
 }
 
-
-/* body a:focus {
+body a:focus {
     color: var(--blue-text-color);
-} */
+}
 
 body li {
     list-style: none;
