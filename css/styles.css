@@ -35,9 +35,10 @@ body a {
     text-decoration: none;
 }
 
-body a:focus {
+
+/* body a:focus {
     color: var(--blue-text-color);
-}
+} */
 
 body li {
     list-style: none;
@@ -143,12 +144,21 @@ ul {
     margin-right: 0;
 }
 
-.header-mail-phone:hover .smartphone-envelope-icon {
+
+/* .header-mail-phone:hover .smartphone-envelope-icon {
     fill: var(--blue-text-color);
 }
 
 .header-mail-phone:hover .contacts-item {
     color: var(--blue-text-color);
+} */
+
+.smartphone-envelope-icon {
+    fill: currentColor;
+}
+
+.contacts-item-gap {
+    display: flex;
 }
 
 
@@ -210,7 +220,8 @@ ul {
     padding: 10px 32px;
 }
 
-.main-title-button:hover {
+.main-title-button:hover,
+.main-title-button:focus {
     color: var(--blue-text-color);
     background-color: var(--primary-white-color);
 }
@@ -353,7 +364,8 @@ ul {
     border-radius: 50%;
 }
 
-.team-icon:hover {
+.team-icon:hover,
+.team-icon:focus {
     background-color: var(--blue-text-color);
 }
 
@@ -361,7 +373,8 @@ ul {
     fill: var(--icon-grey-color);
 }
 
-.team-icon:hover .team-card-icon-image {
+.team-icon:hover .team-card-icon-image,
+.team-icon:focus .team-card-icon-image {
     fill: var(--primary-white-color);
 }
 
@@ -398,12 +411,25 @@ ul {
     border-color: var(--blue-text-color);
 }
 
+.clients-item:focus {
+    border-color: var(--blue-text-color);
+}
+
+
+/* .client-image {
+    fill: currentColor;
+} */
+
 .client-image {
     fill: var(--icon-grey-color);
     margin: 0;
 }
 
 .clients-item:hover .client-image {
+    fill: var(--blue-text-color);
+}
+
+.clients-item:focus .client-image {
     fill: var(--blue-text-color);
 }
 
@@ -503,7 +529,8 @@ ul {
     margin-right: 10px;
 }
 
-.footer-icon-item:hover {
+.footer-icon-item:hover,
+.footer-icon-item:focus {
     background-color: var(--blue-text-color);
 }
 
